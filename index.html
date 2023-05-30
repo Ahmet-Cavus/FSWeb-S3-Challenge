@@ -4,9 +4,11 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<title>Sprint Challenge - Anasayfa</title>
-
+	
+	<link href="./css/index.css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
@@ -15,15 +17,22 @@
 	<div>
 		<!-- header -->
 		<header>
-			<div>
-				ERGİNEER BAR VE MANGAL
-
-				<!-- nav -->
-				Menü
-				Rezervasyonlar
-				Özel Teklifler
-				İletişim
-			</div>
+			<div class="my-element">
+			 <div>
+				<h1 class="main-title">ERGİNEER BAR VE MANGAL</h1>
+				<nav style="display: flex; justify-content: space-evenly;">
+				<a href="#" class="link">Menü</a>
+				<a href="#" class="link">Rezervasyonlar</a>
+				<a href="#" class="link">Özel Teklifler</a>
+				<a href="#" class="link">İletişim</a>
+			    </nav>
+				<div class="social">
+					<i class="fa-brands fa-square-facebook"></i>
+					<i class="fa-brands fa-square-twitter"></i>
+					<i class="fa-brands fa-square-instagram"></i>
+				</div>
+			 </div>
+		    </div>
 		</header>
 
 		<!-- gallery section -->
@@ -31,23 +40,35 @@
 			<div>
 				<h2>YEMEKLERİMİZ</h2>
 
-				img/food-avocadotoast.jpg
+				<div class="row">
 
-				img/food-burger.jpg
+				<img src="img/food-avocadotoast.jpg" alt="resim-1">
 
-				img/food-poutine.jpg
+				<img src="img/food-burger.jpg" alt="resim-2">
 
-				img/food-ribs.jpg
+				<img src="img/food-poutine.jpg" alt="resim-3">
 
-				img/food-sandwich.jpg
+			    </div>
 
-				img/food-sausage.jpg
+				<div class="row">
 
-				img/food-steak.jpg
+				<img src="img/food-ribs.jpg" alt="resim-4">
 
-				img/food-tacos.jpg
+				<img src="img/food-sandwich.jpg" alt="resim-5">
 
-				img/food-wings.jpg
+				<img src="img/food-sausage.jpg" alt="resim-6">
+
+			    </div>
+
+				<div class="row">
+
+				<img src="img/food-steak.jpg" alt="resim-7">
+
+				<img src="img/food-tacos.jpg" alt="resim-8">
+
+				<img src="img/food-wings.jpg" alt="resim-9">
+
+			    </div>
 			</div>
 		</section>
 
@@ -57,20 +78,22 @@
 		<!-- about section -->
 		<section class="about">
 			<div class="about-container">
-				<h2>HAKKIMIZDA</h2>
+				<h2 class="about-section">HAKKIMIZDA</h2>
 
 				<div id="cooks" class="pic">
 				</div>
 
 				<div class="text">
 					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
-					<p>Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
+					<div class="paragraf">
+					<p >Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
 						tempor meatloaf pig sunt porchetta beef. Ad hamburger pig veniam, andouille exercitation cillum
 						eiusmod doner irure tail burgdoggen rump chislic officia. Pancetta frankfurter sed, est t-bone
 						porchetta capicola id tri-tip cillum cow leberkas do minim. Sausage ea velit boudin laboris
 						dolore
 						short loin corned beef commodo jowl beef dolor tempor. Dolor culpa enim in meatloaf, ham mollit
 						shankle duis chicken dolore andouille do tenderloin qui.</p>
+					</div>
 				</div>
 
 				<div id="bartender" class="pic">
@@ -124,17 +147,22 @@
 
 		<!-- footer -->
 		<footer>
-			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+			<div class="mail-list">
+				<nav style="display: flex; justify-content: space-evenly;">
+					<a>Mail listemize katılın!</a>
+					<a href="./menu.html">Menü</a>
+					<a href="./rezervasyon.html">Rezervasyonlar</a>
+					<a href="./ozelTeklifler.html">Özel Teklifler</a>
+					<a href="./iletisim.html">İletişim</a>
+				</nav>
+			</div>
+				<form>
+					<input type="email" placeholder="E-posta Adresi">
+					<button type="submit">Üye Ol</button>
+				</form>
+			<div class="copyright">©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</h>
 		</footer>
+		
 	</div>
 </body>
 
